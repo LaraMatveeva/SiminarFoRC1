@@ -54,8 +54,8 @@ return sum;
 
 // Запуск программы с вызовами методов
 
-int[] array = CreateArrayRndInt(12, -9, 9);
-PrintArray(array);
+int[] array1 = CreateArrayRndInt(12, -9, 9);
+PrintArray(array1);
 int sumNegative = GetSumNegativeElem(array);
 int sumPositive = GetSumPositiveElem(array);
 Console.WriteLine($"Сумма пололжительных чисел = {sumPositive}");

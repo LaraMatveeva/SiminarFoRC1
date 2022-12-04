@@ -11,8 +11,8 @@ Console.WriteLine ($"Случайное число из отрезка 10-99 -->
 int firstdigit = number / 10; // 7 целочисленное деление
 int secondDigit = number % 10; // 8
 
-if(firstdigit > secondDigit)Console.Writeline($"Наибольшая цифра числа --> {firstDigit}");
-else Console.Writeline($"Наибольшая цифра числа --> {secondDigit}");
+if(firstdigit > secondDigit)Console.WriteLine($"Наибольшая цифра числа --> {firstdigit}");
+else Console.WriteLine($"Наибольшая цифра числа --> {secondDigit}");
 
     
 number = new Random().Next(10, 100);
@@ -35,12 +35,12 @@ int MaxDigit(int num) // int num = number
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра числа --> {maxDigit}");
 
-int MaxDigit(int num) // int num = number
+int MaxDigit1(int num) // int num = number
 {
     int firstDigit = num / 10; // 7
     int secondDigit = num % 10; // 8
     return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
 
-int maxDigit = MaxDigit(number);
+int maxDigit1 = MaxDigit1(number);
 Console.WriteLine($"Наибольшая цифра числа --> {maxDigit}");
